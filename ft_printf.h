@@ -51,3 +51,5 @@ typedef enum e_flags
 }   t_flags;
 
 int     ft_printf(const char *format, ...);
+
+#endif
