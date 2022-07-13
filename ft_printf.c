@@ -14,31 +14,7 @@
 
 int	ft_printf(const char *src, ...)
 {
-	va_list lstarg;
-	int		i;
-	char	dst;
-	int		conv;
-
-	va_start(lstarg, src);
-	i = 0;
-	while(src[i])
-	{
-		if (src[i] == '%')
-		{
-			conv = va_arg(lstarg, int);
-			dst = conv;
-			write(1, &dst, ft_strlen(&dst));
-			i+= 2;
-		}
-		else
-		{
-			write(1, &src[i], 1);
-			i++;
-		}
-	}
-	write(1, "\n" ,1);
-	va_end(lstarg);
-	return (0);
+	
 }
 
 int	main()
