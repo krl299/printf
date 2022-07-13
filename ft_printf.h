@@ -64,25 +64,25 @@ void    ft_t_arg_init(t_arg *arg);
 void    ft_t_formatted_init(t_formatted *f);
 void    ft_t_formatted_free(t_formatted *f);
 
-//  File ft_parse.c
+//  File ft_parsers.c
 t_arg   ft_parse_arg(t_printf *pr);
 void    ft_parse_flags(t_printf *pr, t_arg *arg);
 void    ft_parse_width(t_printf *pr, t_arg *arg);
 void    ft_parse_precision(t_printf *pr, t_arg *arg);
 void    ft_parse_specifier(t_printf *pr, t_arg *arg);
 
-//  File ft_print.c
+//  File ft_prints.c
 int     ft_print_arg(t_printf *pr, t_arg *arg);
 void    ft_do_print(t_formatted *f);
 int     ft_count_printed(t_formatted *f);
 
-//  File ft_handle.c
+//  File ft_handles.c
 void    ft_handle_specifier(t_printf *pr, t_arg *arg, t_formatted *f);
 void    ft_handle_zeroes(t_arg *arg, t_formatted *f);
 void    ft_handle_flags(t_arg *arg, t_formatted *f);
 void    ft_handle_width(t_arg *arg, t_formatted *f);
 
-//  File ft_specifier.c
+//  File ft_specs.c
 void    ft_spec_number(t_printf *pr, t_arg *arg, t_formatted *f);
 void    ft_spec_string(t_printf *pr, t_arg *arg, t_formatted *f);
 void    ft_spec_char(t_printf *pr, t_formatted *f);
@@ -93,7 +93,7 @@ void    ft_spec_pointer(t_printf *pr, t_formatted *f);
 void    ft_putchar(char c);
 void    ft_putstr(char *s);
 void    ft_putspace(int i, char c);
-void    ft_corresponding(char c, char *s);
+void    ft_checking(char c, char *s);
 
 //  File ft_utils_2.c
 int     ft_len_ptr(long int nb);
@@ -103,6 +103,7 @@ char    *ft_itoa_base(int value, int base, char spec);
 
 //  Files needed of libft
 size_t  ft_strlen(const char *s);
-size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize);
+size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize);// try to use ft_strdup before that
+char    *ft_strdup(const char *s);
 
 #endif
