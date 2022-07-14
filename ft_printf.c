@@ -6,7 +6,7 @@
 /*   By: cmoran-l <cmoran-l@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 10:56:27 by cmoran-l          #+#    #+#             */
-/*   Updated: 2022/07/04 10:27:52 by cmoran-l         ###   ########.fr       */
+/*   Updated: 2022/07/14 17:11:06 by cmoran-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,10 +46,11 @@ int	ft_t_printf_peek(t_printf *pr, char *next)
 		return (1);
 	return (0);
 }
-
+/*
+#include <stdio.h>
 int	main()
 {
-	ft_printf("%d", 'a');
-	
+	ft_printf("%X\n", 10);
+	printf("%X\n", 10);
 	return(0);
-}
+}*/

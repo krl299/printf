@@ -1,18 +1,16 @@
-SRCS	=	ft_printf.c
+SRCS	=	ft_printf.c	ft_parsers.c	ft_handles.c	ft_prints.c	ft_specs.c	ft_t_utils.c	ft_utils.c	ft_utils_2.c	ft_strlen.c	ft_strdup.c
 
 OBJS	=	${SRCS:.c=.o}
 
 NAME	= libftprinf.a
 
 .c.o:
-	cc -Wall -Werror -Wextra -c $< -o ${<:.c=.o}
+	gcc -Wall -Werror -Wextra -c $< -o ${<:.c=.o}
 
 ${NAME}:	${OBJS}
 	ar -r ${NAME} ${OBJS}
 
 all:	${NAME}
-
-bonus:	all
 
 clean:
 	rm -rf ${OBJS}
@@ -22,4 +20,7 @@ fclean:	clean
 
 re:	fclean all
 
-.PHONY: all bonus fclean clean re
+try:	${OBJS}
+	gcc ${OBJS} && ./a.out
+	
+.PHONY: all fclean clean re
