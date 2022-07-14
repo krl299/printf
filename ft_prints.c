@@ -6,7 +6,7 @@
 /*   By: cmoran-l <cmoran-l@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 16:35:14 by cmoran-l          #+#    #+#             */
-/*   Updated: 2022/07/14 16:33:12 by cmoran-l         ###   ########.fr       */
+/*   Updated: 2022/07/14 17:32:49 by cmoran-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	ft_do_print(t_formatted *f)
 		ft_putstr(f->content);
 }
 
-int		ft_count_printed(t_formatted *f)
+int	ft_count_printed(t_formatted *f)
 {
 	int	count;
 

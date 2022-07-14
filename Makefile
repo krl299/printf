@@ -2,7 +2,7 @@ SRCS	=	ft_printf.c	ft_parsers.c	ft_handles.c	ft_prints.c	ft_specs.c	ft_t_utils.c
 
 OBJS	=	${SRCS:.c=.o}
 
-NAME	= libftprinf.a
+NAME	= libftprintf.a
 
 .c.o:
 	gcc -Wall -Werror -Wextra -c $< -o ${<:.c=.o}
@@ -23,4 +23,4 @@ re:	fclean all
 try:	${OBJS}
 	gcc ${OBJS} && ./a.out
 	
-.PHONY: all fclean clean re
+.PHONY: all fclean clean re try

@@ -6,7 +6,7 @@
 /*   By: cmoran-l <cmoran-l@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 13:16:52 by cmoran-l          #+#    #+#             */
-/*   Updated: 2022/07/14 16:29:21 by cmoran-l         ###   ########.fr       */
+/*   Updated: 2022/07/14 17:32:20 by cmoran-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ void	ft_spec_pointer(t_printf *pr, t_formatted *f);
 void	ft_putchar(char c);
 void	ft_putstr(char *s);
 void	ft_putspace(int i, char c);
-int	ft_checking(char c, char *s);
+int		ft_checking(char c, char *s);
 
 //  File ft_utils_2.c
 int		ft_len_ptr(long int nb);

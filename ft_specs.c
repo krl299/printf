@@ -6,7 +6,7 @@
 /*   By: cmoran-l <cmoran-l@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 16:42:10 by cmoran-l          #+#    #+#             */
-/*   Updated: 2022/07/14 16:39:04 by cmoran-l         ###   ########.fr       */
+/*   Updated: 2022/07/14 17:48:48 by cmoran-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ void	ft_spec_string(t_printf *pr, t_arg *arg, t_formatted *f)
 void	ft_spec_char(t_printf *pr, t_formatted *f)
 {
 	char	c;
+	char	str[2];
 
 	c = va_arg(pr->args, int);
 	if (!c)
@@ -51,7 +52,9 @@ void	ft_spec_char(t_printf *pr, t_formatted *f)
 		f->c_null = 1;
 		return ;
 	}
-	f->content = ft_strdup(&c);
+	str[0] = c;
+	str[1] = '\0';
+	f->content = ft_strdup(str);
 }
 
 void	ft_spec_percent(t_arg *arg, t_formatted *f)

@@ -6,7 +6,7 @@
 /*   By: cmoran-l <cmoran-l@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 10:56:27 by cmoran-l          #+#    #+#             */
-/*   Updated: 2022/07/14 17:11:06 by cmoran-l         ###   ########.fr       */
+/*   Updated: 2022/07/14 18:33:01 by cmoran-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ int	ft_t_printf_peek(t_printf *pr, char *next)
 #include <stdio.h>
 int	main()
 {
-	ft_printf("%X\n", 10);
-	printf("%X\n", 10);
+	ft_printf("%d", 0);
+	printf("\n%d", 0);
 	return(0);
 }*/
